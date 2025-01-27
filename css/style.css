@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto';
+}
+
+ul {
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-left ul li {
+    display: inline-block;
+    margin: 16px 17px 0px;
+    font-size: 15px;
+    font-family: 'Cabin';
+}
+
+.header-left ul li i {
+    margin-right: 10px;
+    color: #dfa974;
+}
+
+.header-left ul li a {
+    color: #030303;
+    text-decoration: none;
+}
+
+.social-links ul li {
+    display: inline-block;
+    margin: 16px 10px 0px;
+}
+
+.social-links ul li a {
+    color: #dfa974;
+    &:hover {
+        color: #e5e5e5;
+        transition: all ease 0.4s;
+    }
+}
+
+.book-btn {
+    margin-left: 22px;
+}
+
+.book-btn button {
+    padding: 16px 42px;
+    background-color: #dfa974;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #dfa974;
+    font-family: 'Cabin';
+    &:hover {
+        background-color: #303030;
+        border: 1px solid #030303;
+        color: #fff;
+        transition: all ease 0.4s;
+    }
+}
+
+.navbar-brand {
+    font-family: 'Lora';
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.nav-dot {
+    color: #dfa974;
+}
+
+.nav-link {
+    font-family: 'Lora';
+    font-weight: 700;
+
+    &:hover {
+        color: #dfa974;
+    }
+}
+
+.nav-item {
+    margin: 0px 4px;
+}
+.navbar-nav {
+    z-index: 999;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e5e5e5;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content ul li {
+    list-style: none;
+    padding: 10px 16px;
+}
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-family: 'Cabin';
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+}  
+
+.banner-sec {
+    background-image: url(img/hero-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+    animation: change 20s infinite ease-in-out;
+}
+@keyframes change {
+    0% {
+        background-image: url(img/hero-3.jpg);
+    }
+    20% {
+        background-image: url(img/hero-2.jpg);
+    }
+    40% {
+        background-image: url(img/hero-1.jpg);
+    }
+    60% {
+        background-image: url(img/hero-2.jpg);
+    }    
+    80% {
+        background-image: url(img/hero-3.jpg);
+    } 
+    100% {
+        background-image: url(img/hero-1.jpg);
+    }
+
+}
+.hotel-con {
+    padding: 100px 0px;
+}
+.hotel-1-left h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 70px;
+    margin-top: 30px;
+}
+.booking-st {
+    background-color: #e5e5e5;
+    padding: 24px 36px;
+    border-radius: 6px;
+}
+.booking-st label {
+    font-weight: 600;
+}
+.booking-st h4 {
+    color: #303030;
+}
+.submit-btn {
+    width: 100%;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #dfa974;
+    color: #303030;
+    border: 1px solid #dfa974;
+    border-radius: 6px;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid #dfa974;
+        color: #dfa974;
+    }
+}
+/* about sec css */
+.about-con {
+    padding: 40px 0px;
+}
+.about-con-left h5 {
+    color: #303030;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+}
+.about-con-left h5::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    background-color: #dfa974;
+    left: 0;
+    bottom: -8px;
+}
+.about-con-left h1 {
+    color: #303030;
+    font-family: 'Lora';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+.about-con-left-p p {
+    font-family: 'Cabin';
+}
+.about-con-right img {
+    width: 100%;
+}
+.read-btn {
+    background-color: #dfa974;
+    padding: 7px 15px;
+    border: 1px solid #dfa974;
+    margin-top: 20px;
+    font-family: 'Lora';
+    font-weight: 400;
+    &:hover {
+        border: 1px solid #dfa974;
+        background-color: transparent;
+        color: #dfa974;
+        transition: all ease 0.6s;
+    }
+}
+/* room sec css */
+
+.rooms-sec {
+    padding: 40px 0px;
+}
+.rooms-head {
+    color: #dfa974;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 18px;
+}
+.room-block-img img {
+    width: 100%;
+    height: 80vh;
+}
+.room-block {
+    margin-top: 10px;
+    position: relative;
+}
+.room-bl-dt {
+    position: absolute;
+    bottom: 16px;
+    left: 12%;
+}
+.room-bl-dt h4 {
+    color: #fff;
+    font-family: 'Lora';
+    font-size: 28px;
+}
+.room-bl-dt h3 {
+    color: #fff;
+    font-size: 22px;
+}
+.room-bl-dt span {
+    color: #dfa974;
+}
+.room-bl-dt i {
+    font-size: 18px;
+}
+.overlay {
+    height: 0;
+    width: 92%;
+    position: absolute;
+    border-radius: 14px;
+    bottom: 0;
+    left: 12px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    transition: height 0.5s;
+}
+.room-block-img:hover .overlay {
+    height: 60%;
+    padding: 30px 16px;
+    cursor: pointer;
+}
+.room-block-img:hover .room-bl-dt {
+    visibility: hidden;
+}
+.room-block-img:hover img {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.overlay h5 {
+    color: #fff;
+}
+.room-bl-dt2 h4 {
+    color: #fff;
+    font-family: 'Lora';
+    font-size: 28px;
+}
+.room-bl-dt2 h3 {
+    color: #fff;
+    font-size: 22px;
+}
+.room-bl-dt2 span {
+    color: #dfa974;
+}
+.room-bl-dt2 i {
+    font-size: 18px;
+}
+/* service sec css */
+.service-sec {
+    padding: 40px 0px;
+}
+.service-head h5 {
+    color: #303030;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+}
+.service-head h5::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    background-color: #dfa974;
+    left: 0;
+    bottom: -8px;
+}
+.service-head h3 {
+    font-family: 'Lora';
+    font-size: 28px;
+    margin-top: 15px;
+}
+.service-box {
+    margin-top: 12px;
+    padding: 10px;
+}
+.service-box i {
+    font-size: 40px;
+    color: #dfa974;
+}
+.service-box h3 {
+    font-family: 'Lora';
+    color: #dfa974;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.service-box:hover {
+    background-color: #dfa974;
+    color: #fff;
+    transition: all ease 0.6s;
+}
+.service-box:hover i {
+    color: #fff;
+}
+.service-box:hover h3 {
+    color: #fff;
+}
+/* testimonial sec css */
+
+.testimonial-sec {
+    padding: 40px 0px;
+}
+.testimonial-head h5 {
+    color: #dfa974;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.testimonial-head h3 {
+    font-family: 'Lora';
+    font-size: 28px;
+    margin-top: 15px;
+}
+.review-name ul li {
+    display: inline-block;
+}
+.review-name ul li i {
+    font-size: 14px;
+    color: #dfa974;
+}
+.review-box {
+    background-color: #e5e5e5;
+    padding: 20px 30px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+/* contact sec css */
+.contact-sec {
+    padding: 40px 0px;
+}
+.contact-head h5 {
+    color: #dfa974;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.contact-info h3 {
+    font-family: 'Lora';
+    font-size: 28px;
+    margin-top: 15px;
+}
+.submit-btn2 {
+    padding: 8px 26px;
+    font-family: 'Lora';
+    background-color: #dfa974;
+    border: 1px solid #dfa974;
+    color: #fff;
+    font-weight: 600;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid #dfa974;
+        color: #dfa974;
+        transition: all ease 0.4s;
+    }
+}
+.contact-list ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.contact-list span {
+    color: silver;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contact-list a {
+    color: #030303;
+    text-decoration: none;
+}
+.contact-list p {
+    font-family: 'Cabin';
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer {
+    background-color: #303030;
+    padding: 40px 0px;
+}
+.footer-one h2 {
+    color: #fff;
+    font-family: 'Lora';
+}
+.footer-one span {
+    color: #dfa974;
+}
+.footer-one p {
+    color: #e5e5e5;
+    margin-top: 10px;
+}
+.footer-two ul li {
+    list-style: none;
+    margin: 6px 0px;
+}
+.footer-two ul li a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        color: #dfa974;
+        transition: all ease 0.4s;
+    }
+}
+.btbtn {
+    position: relative;
+}
+#btbtn {
+    background-color: #dfa974;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: -30%;
+    right: 10%;
+}
+#btbtn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+.footer-three ul li {
+    display: inline-block;
+    margin: 10px 14px 0px 0px;
+}
+.footer-three ul li a {
+    color: #dfa974;
+    font-size: 30px;
+    &:hover {
+        background-color: #303030;
+        color: #fff;
+        transition: all ease 0.4s;
+    }
+}
+.footer-four {
+    padding: 0px 30px;
+}
+.footer-four p {
+    color: #fff;
+}
+.footer-four form {
+    padding: 10px 0px;
+    position: relative;
+}
+.footer-four button {
+    position: absolute;
+    top: 11.2px;
+    right: 2px;
+    height: 35px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #dfa974;
+    color: #fff;
+}
+.footer-2 {
+    background-color: #030303;
+    padding: 10px 0px;
+    color: #e5e5e5;
+    font-family: 'Cabin';
+}
+@media screen and (max-width:400px) {
+    .header-right {
+        display: none;
+    }
+    .header-left ul li  {
+     margin: 6px;
+    }
+    .header-left ul {
+        margin-bottom: 2px;
+    }
+    .hotel-con {
+        padding: 50px 10px;
+    }
+    .hotel-1-left h1 {
+        margin-top: 0px;
+        font-size: 60px;
+    }
+    .booking-st {
+        margin-top: 10px;
+    }
+    .about-con-right img {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:645px) {
+    .header-right {
+        display: none;
+    }
+    .header-left ul li  {
+     margin: 6px;
+    }
+    .header-left ul {
+        margin-bottom: 2px;
+    }
+    .hotel-con {
+        padding: 50px 10px;
+    }
+    .hotel-1-left h1 {
+        margin-top: 0px;
+        font-size: 60px;
+    }
+    .booking-st {
+        margin-top: 10px;
+    }
+    .about-con-right img {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:990px) {
+    
+    .hotel-con {
+        padding: 50px 10px;
+    }
+    .hotel-1-left h1 {
+        margin-top: 0px;
+        font-size: 60px;
+    }
+    .booking-st {
+        margin-top: 10px;
+    }
+    .about-con-right img {
+        margin-top: 15px;
+    }
+   
+}
